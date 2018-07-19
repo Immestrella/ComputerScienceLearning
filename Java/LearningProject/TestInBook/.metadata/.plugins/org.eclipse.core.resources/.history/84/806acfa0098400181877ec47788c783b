@@ -1,0 +1,6 @@
+package javaFoundation;
+
+public class LOLItem {
+	String name;
+	int price;
+}

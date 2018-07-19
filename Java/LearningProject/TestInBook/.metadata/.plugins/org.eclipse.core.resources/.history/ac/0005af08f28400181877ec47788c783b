@@ -1,0 +1,42 @@
+package file;
+import java.io.File;
+
+public class FileList {
+	static long maxsize = 0;
+    static long minsize = Long.MAX_VALUE;
+    static File maxfile = null;
+    static File minfile = null;
+ 
+    public static void find(File f) {
+        File[] fs = f.listFiles();// fs存储当前目录f下的文件列表
+        if (fs == null)// 如果当前目录为空直接返回
+            return;
+        for (File i : fs) {// 用i遍历fs
+             
+            if (i.isFile()) {// 如果i是文件
+                if (i.length() > maxsize) {
+                    maxsize = i.length();
+                    maxfile = i;
+                }
+                if ((i.length() < minsize)&(i.length() != 0)) {
+                    minsize = i.length();
+                    minfile = i;
+                }
+            }
+             
+            if (i.isDirectory())// 如果i是目录
+                find(i);// 以i作为参数 进行递归
+        }
+    }
+ 
+    public static void main(String[] args) {
+        File f = new File("C:/Windows");
+        System.out.println(f);
+        long start = System.currentTimeMillis();
+        find(f);
+        long end = System.currentTimeMillis();
+        System.out.println(maxfile + " " + maxsize);
+        System.out.println(minfile + " " + minsize);
+        System.out.printf("耗时%d毫秒%n", end - start);
+    }
+}

@@ -1,0 +1,16 @@
+package LOL;
+
+public class Armor extends Item {
+	int ArmoeLevel;
+	public static void main(String[]args) {
+		Armor BuJia = new Armor();
+		BuJia.name = "²¼¼×";
+		BuJia.price = 300;
+		BuJia.ArmoeLevel = 15;
+		Armor SuoziJia = new Armor();
+		SuoziJia.name = "Ëø×Ó¼×";
+		SuoziJia.price = 500;
+		SuoziJia.ArmoeLevel = 40;
+		System.out.print(BuJia.name+" "+SuoziJia.name);
+	}
+}

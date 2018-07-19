@@ -1,0 +1,14 @@
+package javaFoundation;
+
+public class LOL {
+	public class Item {
+		String name;
+		int price;
+	}
+	public class Armor extends Item {
+		int ArmorLevel;
+		public static void main(String[]args) {
+			
+		}
+	}
+}

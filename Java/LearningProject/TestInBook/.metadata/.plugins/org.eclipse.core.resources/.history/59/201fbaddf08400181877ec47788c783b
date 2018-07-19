@@ -1,0 +1,32 @@
+package file;
+import java.io.File;
+
+public class FileList {
+	public static void mian(String[] args) {
+		File f= new File("C:/WINDOWS");
+		File[] fs=f.listFiles();
+		File c=null;
+		File d=null;
+		long max=0;
+		long min=fs[0].length();
+		if(f.exists()) {
+			for(int i=0;i<fs.length;i++) {
+				if(fs[i].length()!=0 && fs[i].isDirectory()==false) {
+					if(fs[i].length()< min) {
+						min=fs[i].length();
+						c =fs[i];
+					}
+					if(fs[i].length()> max) {
+						max=fs[i].length();
+						d =fs[i];
+					}
+				}
+			}
+		}
+		else {
+			System.out.println("该目录下不存在文件");
+		}
+		System.out.println("最大值为" + max + ",文件名称为：" + c);
+	    System.out.println("最小值为" + min + ",文件名称为：" + d);
+	}
+}

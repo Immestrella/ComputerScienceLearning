@@ -1,0 +1,20 @@
+package LOL;
+
+public class Test {
+	String name; //姓名
+    
+    float hp; //血量
+        
+    float armor; //护甲
+        
+    int moveSpeed; //移动速度
+        
+    public Test(){
+        System.out.println("Hero的构造方法 ");
+    }
+     
+    public static void main(String[] args) {
+        new Test();
+        Test h 
+    }
+}

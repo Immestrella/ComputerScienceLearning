@@ -1,0 +1,11 @@
+package accountExcption;
+
+public class OverdraftException extends Exception {
+	private double deficit;
+	public OverdraftException(String message,double deficit) {
+		
+	}
+	public double getDeficit() {
+		return this.deficit;
+	}
+}

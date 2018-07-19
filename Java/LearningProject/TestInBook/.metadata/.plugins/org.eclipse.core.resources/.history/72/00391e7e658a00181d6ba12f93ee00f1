@@ -1,0 +1,10 @@
+package Test;
+
+import org.neo.smartcontract.framework.SmartContract;
+
+public class Go extends SmartContract{
+    public static void Main(byte[] signature)
+    {
+
+    }
+}

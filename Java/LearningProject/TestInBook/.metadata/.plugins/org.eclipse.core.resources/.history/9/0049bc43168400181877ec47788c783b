@@ -1,0 +1,9 @@
+package LOL;
+
+public class Guocheng {
+    public static void main (String[]age){
+        Code c=new Code();
+        Code c1=new Code("3.1---构造函数开始执行;初始化了第二个对象c1.表明构造函数是针对特有的对象初始化");
+         
+    }
+}

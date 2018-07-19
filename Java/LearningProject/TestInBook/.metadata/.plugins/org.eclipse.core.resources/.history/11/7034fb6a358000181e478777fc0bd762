@@ -1,0 +1,23 @@
+package javaFoundation;
+
+public class XiaoxueMath {
+	public static void main(String[]args) {
+		for(long i=1;i<8;i++) {
+			for(long j=1;j<8;j++) {
+				for(long k=1;k<10;k++) {
+					for(long l=1;l<14;l++) {
+						if(i+j==8) {
+							if(i+k==14){
+								if(k-l==6) {
+									if(l+j==10) {
+										System.out.println("´ð°¸£º"+i+" "+j+" "+k+" "+l);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

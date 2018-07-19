@@ -1,0 +1,30 @@
+package accountExcption;
+
+public class Account {
+	protected double balance;
+	public Account() {
+		this.balance=0;
+	}
+	public Account(double init) {
+		this.balance=init;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void deposit(double amt) {
+		balance += amt;
+		System.out.println("¥Ê»Î:"+amt+"$,"+"”‡∂Ó£∫"+balance);
+	}
+	public void withdraw(double amt){
+		balance -= amt;
+		System.out.println("»°≥ˆ:"+amt+"$,"+"”‡∂Ó£∫"+balance);
+	}
+	public static void main(String[]args) {
+		Account me = new Account(1000);
+		Account you = new Account();
+		System.out.println(me.balance);
+		me.deposit(90);me.withdraw(100);
+		System.out.println(you.balance);
+		you.deposit(1002);you.withdraw(400);
+	}
+}

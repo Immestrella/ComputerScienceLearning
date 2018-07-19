@@ -1,0 +1,12 @@
+package javaFoundation;
+
+public class Begger {
+	public static void main(String[]args){
+		int j=0;
+		for(int i=0;i<2;i++) {
+			j=j+2^i;
+			System.out.println("乞丐十天一共讨到了"+j+"元。");
+		}
+		System.out.println("乞丐十天一共讨到了"+j+"元。");
+	}
+}

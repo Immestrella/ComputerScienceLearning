@@ -1,0 +1,6 @@
+package j2se;
+import java.util.Scanner;
+
+public class BMI {
+
+}

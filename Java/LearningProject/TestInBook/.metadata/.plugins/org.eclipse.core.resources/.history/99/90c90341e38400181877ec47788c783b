@@ -1,0 +1,21 @@
+package accountExcption;
+
+public class CheckingAccount extends Account {
+	private double overdraftProtection;
+	public CheckingAccount(double balance) {
+		this.balance = balance;
+	}
+	public CheckingAccount(double balanlce,double protect) {
+		this.overdraftProtection = protect;
+		this.balance = balance;
+	}
+	@Override
+	public void withdraw(double amt) throws OverdraftException {
+		if(this.balance-amt-overdraftProtection<0) {
+			throw new OverdraftException("余额不足,超出信用范围",amt-this.balance-overdraftProtection);
+		}
+		balance -= amt;
+		System.out.println("取出:"+amt+"$,"+"余额："+balance);
+	}
+	
+}

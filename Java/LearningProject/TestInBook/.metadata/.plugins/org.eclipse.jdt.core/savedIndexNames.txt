@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\dbc-dell-002\Desktop\Java\.metadata\.plugins\org.eclipse.jdt.core
+1904168108.index
+246132153.index
+4177633376.index

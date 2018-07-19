@@ -1,0 +1,12 @@
+package accountExcption;
+
+public class UseAccount {
+	public static void main(String[]args) {
+		Account me = new Account(1000);
+		Account you = new Account();
+		System.out.println(me.balance);
+		me.deposit(90);me.withdraw(10);
+		System.out.println(you.balance);
+		you.deposit(1002);you.withdraw(40);
+	}
+}
